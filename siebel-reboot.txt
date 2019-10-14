@@ -1,0 +1,735 @@
+login as: oracle
+Using keyboard-interactive authentication.
+Password:
+Last login: Thu Sep 19 08:07:52 2019 from 172.31.172.187
+**************************************************************************
+*                                                                        *
+*                      British Telecommunications Plc.                   *
+*                                                                        *
+*                                                                        *
+* WARNING: You have accessed a computer system operated by BT. You are   *
+* required  to have personal authorisation from the system administrator *
+* before you use this computer and you are strictly limited to  the  use *
+* set  out  in that written authorisation. Unauthorised access or use of *
+* this system is prohibited.  Unauthorised  access  to  or  misuse  of a *
+* computer constitutes an offence under the Computer Misuse Act 1990.    *
+* Unauthorised access to information is defined within BT UK Security    *
+* Policy Section 4 - Information Security.                               *
+*                                                                        *
+* If you disclose customer or BT information without authority you may   *
+* be sacked and prosecuted.                                              *
+*                                                                        *
+**************************************************************************
+Are you authorised to use this computer as detailed above? (Y/N)? : y
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+*** IP360 PATCH APPLIED TO SERVER aps09726fwdat01 ON 15042017 UNDER HPSM CHANGE                                                                              RECORD C100193862 ***
+Please hit <return> to continue
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+*** IP360 PATCH APPLIED TO SERVER aps09726fwdat01 ON 15042017 UNDER HPSM CHANGE                                                                              RECORD C100193862 ***
+You have new mail.
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: ps -ef | grep smon
+    grid 10897     1   0   Jul 14 ?           2:32 asm_smon_+ASM1
+    root  8649     1   0   Jul 14 ?        3174:32 /grid/product/11.2.0.3/bin/osysmond.bin
+  oracle 16960     1   0   Jul 14 ?          14:44 ora_smon_sieapo1
+  oracle 16970     1   0   Jul 14 ?          20:05 ora_smon_lluplu1
+  oracle 17209     1   0   Jul 14 ?          20:56 ora_smon_lluapo1
+  oracle  8028     1   0   Sep 16 ?           0:40 ora_smon_llucvf1
+  oracle 11301     1   0   Jul 14 ?           5:47 ora_smon_lluvul
+  oracle 12845     1   0   Jul 14 ?           4:32 ora_smon_sievul
+  oracle  2373     1   0   Aug 22 ?           6:10 ora_smon_siemar1
+  oracle  3463     1   0   Sep 16 ?           0:24 ora_smon_siecvf1
+  oracle  7674     1   0   Jul 22 ?          15:32 ora_smon_sieplu1
+  oracle 21579 21444   0 08:33:35 pts/2       0:00 grep smon
+  oracle  9367     1   0   Aug 22 ?           6:04 ora_smon_llumar1
+  oracle 11314     1   0   Aug 22 ?           5:49 ora_smon_llubac1
+  oracle 16170     1   0   Aug 22 ?           4:22 ora_smon_siebac1
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: ps -ef | grep smon
+    grid 10897     1   0   Jul 14 ?           2:32 asm_smon_+ASM1
+    root  8649     1   0   Jul 14 ?        3174:33 /grid/product/11.2.0.3/bin/osysmond.bin
+  oracle 16960     1   0   Jul 14 ?          14:44 ora_smon_sieapo1
+  oracle 16970     1   0   Jul 14 ?          20:05 ora_smon_lluplu1
+  oracle 17209     1   0   Jul 14 ?          20:56 ora_smon_lluapo1
+  oracle  8028     1   0   Sep 16 ?           0:40 ora_smon_llucvf1
+  oracle 11301     1   0   Jul 14 ?           5:47 ora_smon_lluvul
+  oracle 12845     1   0   Jul 14 ?           4:32 ora_smon_sievul
+  oracle  2373     1   0   Aug 22 ?           6:10 ora_smon_siemar1
+  oracle  3463     1   0   Sep 16 ?           0:24 ora_smon_siecvf1
+  oracle 21853 21444   0 08:34:04 pts/2       0:00 grep smon
+  oracle  7674     1   0   Jul 22 ?          15:32 ora_smon_sieplu1
+  oracle  9367     1   0   Aug 22 ?           6:04 ora_smon_llumar1
+  oracle 11314     1   0   Aug 22 ?           5:49 ora_smon_llubac1
+  oracle 16170     1   0   Aug 22 ?           4:22 ora_smon_siebac1
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: ps -ef | grep tns
+    grid 13614     1   0   Jul 14 ?         234:49 /grid/product/11.2.0.3/bin/tnslsnr LISTENER -inherit
+    grid  7336     1   0   Sep 13 ?           4:22 /grid/product/11.2.0.3/bin/tnslsnr LISTENER_SCAN2 -inherit
+    grid  7338     1   0   Sep 13 ?           4:34 /grid/product/11.2.0.3/bin/tnslsnr LISTENER_SCAN3 -inherit
+  oracle 21894 21444   0 08:34:12 pts/2       0:00 grep tns
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: srvctl status listener
+Listener LISTENER is enabled
+Listener LISTENER is running on node(s): aps09726fwdat02,aps09726fwdat01
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: srvctl status scan_listener
+SCAN Listener LISTENER_SCAN1 is enabled
+SCAN listener LISTENER_SCAN1 is running on node aps09726fwdat02
+SCAN Listener LISTENER_SCAN2 is enabled
+SCAN listener LISTENER_SCAN2 is running on node aps09726fwdat01
+SCAN Listener LISTENER_SCAN3 is enabled
+SCAN listener LISTENER_SCAN3 is running on node aps09726fwdat01
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: crsctl stat res -t
+--------------------------------------------------------------------------------
+NAME           TARGET  STATE        SERVER                   STATE_DETAILS
+--------------------------------------------------------------------------------
+Local Resources
+--------------------------------------------------------------------------------
+ora.DG_APOLLO_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_ARCH01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_ARCH01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VOTE_OCR01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_ARCH01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.LISTENER.lsnr
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.asm
+               ONLINE  ONLINE       aps09726fwdat01          Started
+               ONLINE  ONLINE       aps09726fwdat02          Started
+ora.gsd
+               OFFLINE OFFLINE      aps09726fwdat01
+               OFFLINE OFFLINE      aps09726fwdat02
+ora.net1.network
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.ons
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.registry.acfs
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+--------------------------------------------------------------------------------
+Cluster Resources
+--------------------------------------------------------------------------------
+ora.LISTENER_SCAN1.lsnr
+      1        ONLINE  ONLINE       aps09726fwdat02
+ora.LISTENER_SCAN2.lsnr
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.LISTENER_SCAN3.lsnr
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.aps09726fwdat01.vip
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.aps09726fwdat02.vip
+      1        ONLINE  ONLINE       aps09726fwdat02
+ora.cvu
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.lluapo.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.llubac.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.llucvf.db
+      1        ONLINE  ONLINE       aps09726fwdat01          Open
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.llumar.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.lluplu.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.oc4j
+      1        ONLINE  OFFLINE
+ora.scan1.vip
+      1        ONLINE  ONLINE       aps09726fwdat02
+ora.scan2.vip
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.scan3.vip
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.sieapo.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.sieapo.esb_wa.svc
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02
+ora.siebac.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.siecvf.db
+      1        ONLINE  ONLINE       aps09726fwdat01          Open
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.siecvf.siecvf_any.svc
+      1        ONLINE  ONLINE       aps09726fwdat02
+      2        ONLINE  ONLINE       aps09726fwdat01
+ora.siemar.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.sieplu.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.sieplu.esb_wp.svc
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01:
+aps09726fwdat01: ssh aps09726fwdat02
+Last login: Thu Sep 19 08:09:41 2019 from aps09726fwdat01
+**************************************************************************
+*                                                                        *
+*                      British Telecommunications Plc.                   *
+*                                                                        *
+*                                                                        *
+* WARNING: You have accessed a computer system operated by BT. You are   *
+* required  to have personal authorisation from the system administrator *
+* before you use this computer and you are strictly limited to  the  use *
+* set  out  in that written authorisation. Unauthorised access or use of *
+* this system is prohibited.  Unauthorised  access  to  or  misuse  of a *
+* computer constitutes an offence under the Computer Misuse Act 1990.    *
+* Unauthorised access to information is defined within BT UK Security    *
+* Policy Section 4 - Information Security.                               *
+*                                                                        *
+* If you disclose customer or BT information without authority you may   *
+* be sacked and prosecuted.                                              *
+*                                                                        *
+**************************************************************************
+Are you authorised to use this computer as detailed above? (Y/N)? : y
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+*** IP360 PATCH APPLIED TO SERVER aps09726fwdat02 ON 15042017 UNDER HPSM CHANGE RECORD C100193862 ***
+Please hit <return> to continue
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+*** IP360 PATCH APPLIED TO SERVER aps09726fwdat02 ON 15042017 UNDER HPSM CHANGE RECORD C100193862 ***
+You have new mail.
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02: ps -ef | grep smon
+    root  8542     1   0   Aug 22 ?         935:07 /grid/product/11.2.0.3/bin/osysmond.bin
+    grid  9018     1   0   Aug 22 ?           1:06 asm_smon_+ASM2
+  oracle 14188     1   0   Aug 22 ?           3:09 ora_smon_sieapo2
+  oracle 14180     1   0   Aug 22 ?           3:29 ora_smon_lluapo2
+  oracle 14178     1   0   Aug 22 ?           7:09 ora_smon_llumar2
+  oracle 14175     1   0   Aug 22 ?           3:35 ora_smon_lluplu2
+  oracle 14194     1   0   Aug 22 ?           3:25 ora_smon_sieplu2
+  oracle  6246     1   0   Sep 16 ?           0:18 ora_smon_siecvf2
+  oracle 14796     1   0   Aug 22 ?           6:28 ora_smon_siebac2
+  oracle 14797     1   0   Aug 22 ?           8:00 ora_smon_llubac2
+  oracle 14799     1   0   Aug 22 ?           7:10 ora_smon_siemar2
+  oracle 11110     1   0   Sep 16 ?           0:23 ora_smon_llucvf2
+  oracle  1358  1258   0 08:35:21 pts/1       0:00 grep smon
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02: ps -ef | grep tn
+    grid 10867     1   0   Aug 22 ?          38:39 /grid/product/11.2.0.3/bin/tnslsnr LISTENER -inherit
+    grid 26185     1   0   Aug 22 ?          19:47 /grid/product/11.2.0.3/bin/tnslsnr LISTENER_SCAN1 -inherit
+  oracle  1389  1258   0 08:35:27 pts/1       0:00 grep tn
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02: ps -ef | grep d.bin
+    grid  8518     1   0   Aug 22 ?         321:17 /grid/product/11.2.0.3/bin/gipcd.bin
+    grid  8563     1   0   Aug 22 ?         356:31 /grid/product/11.2.0.3/bin/ocssd.bin
+    root  7284     1   0   Aug 22 ?         386:36 /grid/product/11.2.0.3/bin/ohasd.bin reboot
+    grid  8670     1   0   Aug 22 ?         185:10 /grid/product/11.2.0.3/bin/evmd.bin
+    grid  8488     1   0   Aug 22 ?          63:49 /grid/product/11.2.0.3/bin/gpnpd.bin
+    root  8542     1   0   Aug 22 ?         935:08 /grid/product/11.2.0.3/bin/osysmond.bin
+    grid  8470     1   0   Aug 22 ?           1:26 /grid/product/11.2.0.3/bin/mdnsd.bin
+    root  8637     1   0   Aug 22 ?         206:38 /grid/product/11.2.0.3/bin/octssd.bin reboot
+    root 13769     1   0   Sep 12 ?         145:37 /grid/product/11.2.0.3/bin/crsd.bin reboot
+  oracle  1418  1258   0 08:35:40 pts/1       0:00 grep d.bin
+aps09726fwdat02:
+aps09726fwdat02:
+
+aps09726fwdat02: aps09726fwdat02:
+aps09726fwdat02: crsctl stat res -t
+--------------------------------------------------------------------------------
+NAME           TARGET  STATE        SERVER                   STATE_DETAILS
+--------------------------------------------------------------------------------
+Local Resources
+--------------------------------------------------------------------------------
+ora.DG_APOLLO_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_APOLLO_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_BACCHUS_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_CVF_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_ARCH01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_MARS_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_ARCH01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_PLUTO_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VOTE_OCR01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_ARCH01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA03.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA04.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_DATA05.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_GG_01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_RECO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_REDO01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_REDO02.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.DG_VULCAN_TEMP01.dg
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.LISTENER.lsnr
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.asm
+               ONLINE  ONLINE       aps09726fwdat01          Started
+               ONLINE  ONLINE       aps09726fwdat02          Started
+ora.gsd
+               OFFLINE OFFLINE      aps09726fwdat01
+               OFFLINE OFFLINE      aps09726fwdat02
+ora.net1.network
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.ons
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+ora.registry.acfs
+               ONLINE  ONLINE       aps09726fwdat01
+               ONLINE  ONLINE       aps09726fwdat02
+--------------------------------------------------------------------------------
+Cluster Resources
+--------------------------------------------------------------------------------
+ora.LISTENER_SCAN1.lsnr
+      1        ONLINE  ONLINE       aps09726fwdat02
+ora.LISTENER_SCAN2.lsnr
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.LISTENER_SCAN3.lsnr
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.aps09726fwdat01.vip
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.aps09726fwdat02.vip
+      1        ONLINE  ONLINE       aps09726fwdat02
+ora.cvu
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.lluapo.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.llubac.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.llucvf.db
+      1        ONLINE  ONLINE       aps09726fwdat01          Open
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.llumar.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.lluplu.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.oc4j
+      1        ONLINE  OFFLINE
+ora.scan1.vip
+      1        ONLINE  ONLINE       aps09726fwdat02
+ora.scan2.vip
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.scan3.vip
+      1        ONLINE  ONLINE       aps09726fwdat01
+ora.sieapo.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.sieapo.esb_wa.svc
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02
+ora.siebac.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.siecvf.db
+      1        ONLINE  ONLINE       aps09726fwdat01          Open
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.siecvf.siecvf_any.svc
+      1        ONLINE  ONLINE       aps09726fwdat02
+      2        ONLINE  ONLINE       aps09726fwdat01
+ora.siemar.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.sieplu.db
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02          Open
+ora.sieplu.esb_wp.svc
+      1        ONLINE  ONLINE       aps09726fwdat01
+      2        ONLINE  ONLINE       aps09726fwdat02
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02: ps -ef | grep smon
+    root  8542     1   0   Aug 22 ?         935:09 /grid/product/11.2.0.3/bin/osysmond.bin
+    grid  9018     1   0   Aug 22 ?           1:06 asm_smon_+ASM2
+  oracle 14188     1   0   Aug 22 ?           3:09 ora_smon_sieapo2
+  oracle 14180     1   0   Aug 22 ?           3:29 ora_smon_lluapo2
+  oracle 14178     1   0   Aug 22 ?           7:09 ora_smon_llumar2
+  oracle 14175     1   0   Aug 22 ?           3:35 ora_smon_lluplu2
+  oracle 14194     1   0   Aug 22 ?           3:25 ora_smon_sieplu2
+  oracle  6246     1   0   Sep 16 ?           0:18 ora_smon_siecvf2
+  oracle 14796     1   0   Aug 22 ?           6:28 ora_smon_siebac2
+  oracle 14797     1   0   Aug 22 ?           8:00 ora_smon_llubac2
+  oracle 14799     1   0   Aug 22 ?           7:10 ora_smon_siemar2
+  oracle  1676  1258   0 08:36:18 pts/1       0:00 grep smon
+  oracle 11110     1   0   Sep 16 ?           0:23 ora_smon_llucvf2
+aps09726fwdat02:
+aps09726fwdat02:
+aps09726fwdat02:
